@@ -1,0 +1,41 @@
+<div class="container mt-5">
+  <h1> Cadastro de Produto</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <!-- Formulário de Adicionar Produto -->
+      <form id="formAdicionarProduto">
+        <div class="form-group">
+          <label for="produtoNome">Nome do Produto:</label>
+          <input type="text" class="form-control" id="produtoNome" required>
+        </div>
+        <div class="form-group">
+          <label for="produtoPreco">Preço:</label>
+          <input type="number" class="form-control" id="produtoPreco" step="0.01" required>
+        </div>
+        <div class="form-group">
+          <label for="produtoQuantidade">Quantidade Disponível:</label>
+          <input type="number" class="form-control" id="produtoQuantidade" required>
+        </div>
+        <div class="form-group">
+          <label for="produtoPeso">Peso (kg):</label>
+          <input type="number" class="form-control" id="produtoPeso" step="0.01" required>
+        </div>
+        <div class="form-group">
+          <label for="produtoInfo">Informações:</label>
+          <textarea class="form-control" id="produtoInfo" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="produtoDataCadastro">Data de Cadastro:</label>
+          <input type="date" class="form-control" id="produtoDataCadastro" required>
+        </div>
+        <div class="form-group">
+          <label for="produtoImagem">URL da Imagem:</label>
+          <input type="text" class="form-control" id="produtoImagem" required>
+        </div>
+    
+        <div class="form-group">
+          <button type="button" class="btn btn-success m-1" onclick="adicionarProduto()">Adicionar Produto</button>
+        </div>
+     
+      </form>
+    </div>

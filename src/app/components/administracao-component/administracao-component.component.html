@@ -1,0 +1,42 @@
+
+<div class="container mt-5">
+    <h2 class="mb-4">Aprovação de Pagamentos e Liberação para Entrega</h2>
+  
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Número do Pedido</th>
+          <th>Quantidade</th>
+          <th>Preço Total</th>
+          <th>Status do Pagamento</th>
+          <th>Ações</th>
+          <th>Status Pagamento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>         
+          <td>2</td>
+          <td>R$ 100,00</td>
+          <td>Aguardando Aprovação</td>
+          <td>
+            <button class="btn btn-success m-2" onclick="aprovarPagamento(1)">Aprovar Pagamento</button>
+            <button class="btn btn-danger m-2" onclick="rejeitarPagamento(1)">Rejeitar Pagamento</button>
+            <button class="btn btn-primary m-2" onclick="liberarParaEntrega(1)">Liberar para Entrega</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1</td>
+          <td>R$ 30,00</td>
+          <td>Negado</td>          
+          <td>
+            <button class="btn btn-success m-2" onclick="aprovarPagamento(2)">Aprovar Pagamento</button>            
+            <button class="btn btn-danger m-2" onclick="rejeitarPagamento(2)">Rejeitar Pagamento</button>        
+            <button class="btn btn-primary m-2" onclick="liberarParaEntrega(2)">Liberar para Entrega</button>
+          </td>
+        </tr>
+        <!-- Adicione mais linhas conforme necessário -->
+      </tbody>
+    </table>
+</div>

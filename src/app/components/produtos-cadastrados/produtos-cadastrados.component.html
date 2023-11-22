@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <h2>Relatório de Produtos</h2>
+  
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nome do Produto</th>
+          <th scope="col">Preço</th>
+          <th scope="col">Quantidade Disponível</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let produto of produtos">
+          <td>{{ produto.id }}</td>
+          <td>{{ produto.nome }}</td>
+          <td>R$ {{ produto.preco.toFixed(2) }}</td>
+          <td>{{ produto.quantidade }}</td>
+          <td>
+            <button class="btn btn-primary btn-sm mr-2" >Editar</button>
+            <button class="btn btn-danger btn-sm" >Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

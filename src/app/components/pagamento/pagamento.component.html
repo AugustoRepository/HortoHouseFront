@@ -1,0 +1,75 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Formulário de Pagamento</h2>
+  
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="nomeCartao">Nome no Cartão</label>
+          <input type="text" class="form-control" id="nomeCartao" placeholder="Nome no Cartão">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="numeroCartao">Número do Cartão</label>
+          <input type="text" class="form-control" id="numeroCartao" placeholder="Número do Cartão">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="dataValidade">Data de Validade</label>
+          <input type="text" class="form-control" id="dataValidade" placeholder="MM/AA">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="codigoSeguranca">Código de Segurança</label>
+          <input type="text" class="form-control" id="codigoSeguranca" placeholder="Código">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="bandeiraCartao">Bandeira do Cartão</label>
+          <select id="bandeiraCartao" class="form-control">
+            <option value="" selected disabled>Selecione a Bandeira</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="amex">American Express</option>
+            <option value="discover">Discover</option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="valorPagamento">Valor do Pagamento</label>
+          <input type="text" class="form-control" id="valorPagamento" placeholder="R$ 0,00">
+        </div>
+      </div>
+  
+      <div id="pixForm" style="display: none;">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="chavePix">Chave Pix</label>
+            <input type="text" class="form-control" id="chavePix" placeholder="Digite sua chave Pix">
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="formaPagamento" id="pixRadio" value="pix" required>
+            <label class="form-check-label" for="pixRadio">Pix</label>
+          </div>
+        </div>
+        <div class="form-group col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="formaPagamento" id="cartaoRadio" value="cartao" required>
+            <label class="form-check-label" for="cartaoRadio">Cartão</label>
+          </div>
+        </div>
+      </div>
+  
+      <button type="button" class="btn btn-primary" onclick="processarPagamento()">Processar Pagamento</button>
+    </form>
+  </div>
